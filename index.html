@@ -9,20 +9,95 @@
 </head>
 <body>
     <header>
+        <!--<img src="./imagenes/tal_sirva_f.png" id="provicionalxd">-->
         <a href="#" class="logo">Logo</a>
         <ul>
             <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="acerca.html">Acerca de</a></li>
+            <li><a href="trabajo.html">Trabajo</a></li>
+            <li><a href="#">Contacto</a></li>
         </ul>
     </header>
     <section>
-        <img src= "./imágenes/fondo-preuba1.png" id="fondito">
-        <img src= "./imágenes/luna-preuba1.png" id="lunita">
+        <img src= "./imagenes/fondo-preuba1.png" id="fondito">
+        <img src= "./imagenes/luna-preuba1.png" id="lunita">
         <h2 id="text">Awful Games</h2>
-        <a href="#" id="btn">Explore</a>
-        <img src= "./imágenes/nuebes-edificios-preuba1.png" id="nubesitas">
+        <a href="#sec" id="btn">Nosotros</a>
+        <img src= "./imagenes/nuebes-edificios-preuba1.png" id="nubesitas">
     </section>
+    <div class="sec" id="sec">
+        <h2>¿Quiénes somos?</h2>
+        <p>Awful Games nace como un proyecto de procedencia escolar, que pretende entregar al público un videojuego que resulte interesante. Somos un círculo de 3 integrantes dispuesto a dar lo máximo. Acompáñanos en nuestro crecimeinto.</p>
+    </div>
+    <script>
+        let fondito = document.getElementById('fondito');
+        let lunita = document.getElementById('lunita');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let nubesitas = document.getElementById('nubesitas');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            fondito.style.left = value = 0.25 = 'px';
+            lunita.style.top = value = 1.05 = 'px';
+            text.style.marginRight = value = 2 = 'px';
+            text.style.marginTop = value = 1.5 = 'px';
+            btn.style.marginTop = value = 1.5 = 'px';
+            header.style.top = value = 0.5 = 'px';
+        })
+    </script>
+    <div class="footer-links">
+        <div class="footer-container">
+            <ul>
+                <li>
+                    <a href="#"></a>
+                        <h3>Awful Games</h3>
+                </li>
+                <li>
+                    <a href="trabajo.html">Trabajo</a>   
+                </li>
+                <li>
+                    <a href="#sec">Nostros</a>   
+                </li>
+                <li>
+                    <a href="#">Política de privacidad</a>   
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#"></a>
+                        <h3>Ayuda</h3>
+                </li>
+                <li>
+                    <a href="#">FAQ</a>   
+                </li>
+                <li>
+                    <a href="#">Método de pago</a>   
+                </li>
+                <li>
+                    <a href="#">Cómo aparecer en la página</a>   
+                </li>
+                <li>
+                    <a href="#">Devolucines</a>   
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#"></a>
+                        <h3>Equipo Awful Games</h3>
+                </li>
+                <li>
+                    <a href="#">María Jesús Mijangos Sansores</a>   
+                </li>
+                <li>
+                    <a href="#">Benjamín Francisco Báez Salazar</a>   
+                </li>
+                <li>
+                    <a href="#">Héctor Enmanuel Polanco Chi</a>   
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
