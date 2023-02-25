@@ -136,6 +136,18 @@ section img#edificios
     z-index: 9;
     transform: translateY(100px);
 }
+#btn1
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #1E0C1A;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(5px);
+}
 .sec
 {
     position: relative;
@@ -171,10 +183,20 @@ section img#edificios
 }
 .footer-links {
     background: #030005; /*#030005*/
-    color: white;
+    color: #030005/*white*/;
     font-size: 12px;
     padding: 35px 0;
     
+}
+.footer-container h3{
+    /*font-size: 3.5em;
+    margin-bottom: 18px;*/
+    color: #fff;
+}
+.footer-container a{
+    /*font-size: 3.5em;
+    margin-bottom: 18px;*/
+    color: #fff;
 }
 .footer-container {
     display: grid;
@@ -193,9 +215,40 @@ section img#edificios
 }
 .footer {
     background: #030005; /*323232*/
-    color: #867C7C;
+    color: #030005/*#867C7C*/;
     font-size: 12px;
     padding: 20px 0;
     text-align: center;
     padding-bottom: 20px;
+}
+
+.cards-banner-one {
+    width: 100%;
+    height: 350px;
+    background: url('./imagenes/diclonius1200x320.png') no-repeat center center/cover;
+    margin-bottom: 40px;
+    animation: kotoriii 8s infinite;
+    animation-delay: 8s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+.cards-banner-one .content{
+    width: 40%;
+    padding: 90px 0 0 30px;
+    color: white;
+}
+
+@keyframes kotoriii {
+    0% {
+        background-image: url('./imagenes/birdhouse\ banner.jfif');
+    }
+
+    50% {
+        background-image: url('./imagenes/death\ from\ above\ 1200x320.png');
+    }
+
+    100% {
+        background-image: url('./imagenes/scarlet\ wing\ 1200x320.png');
+    }
 }
