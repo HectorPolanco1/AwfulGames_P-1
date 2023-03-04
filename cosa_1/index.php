@@ -7,7 +7,11 @@
     <title>Awful Games 1</title>
 </head>
 <body>
-    <h1>FUCK</h1>
-    <script src="js/inicio.js"></script>
+<div id="juego">			
+		</div>
+		<script src="js/rectangulo.js"></script>
+		<script src="js/bucle_principal.js"></script>
+		<script src="js/dimensiones.js"></script>
+		<script src="js/inicio.js"></script>
 </body>
 </html>

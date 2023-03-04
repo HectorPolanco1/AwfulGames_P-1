@@ -1,5 +1,16 @@
+//DOM = DOCUMENT OBJECT MODEL
+// ctrl + f5 = recargar limpiando la caché
+
 document.addEventListener('DOMContentLoaded', function() {
-    console.log("Listo");
+    inicio.iniciarJuego();
 }, false);
 
-//DOM = DOCUMENT OBJECT MODEL
+var inicio = {
+	iniciarJuego: function() {
+		console.log("Juego iniciado");
+		dimensiones.iniciar();
+		var r = new Rectangulo(0, 0, 100, 100);
+		var r2 = new Rectangulo(100, 0, 100, 100);
+		buclePrincipal.iterar();
+	}
+};
