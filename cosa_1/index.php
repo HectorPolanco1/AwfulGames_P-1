@@ -9,9 +9,8 @@
 <body>
 <div id="juego">			
 		</div>
-		<script src="js/rectangulo.js"></script>
-		<script src="js/bucle_principal.js"></script>
-		<script src="js/dimensiones.js"></script>
-		<script src="js/inicio.js"></script>
+		<?php
+			include_once 'app/cargadorArchivosJS.inc.php';
+		?>
 </body>
 </html>

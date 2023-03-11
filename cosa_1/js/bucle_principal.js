@@ -28,6 +28,8 @@ var buclePrincipal = {
         
     },
     actualizar: function(registroTemporal) {
+        teclado.reiniciar();
+        mando.actualizar();
         buclePrincipal.aps++;
     },
     dibujar: function(registroTemporal) {
