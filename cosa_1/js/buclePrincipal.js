@@ -13,7 +13,6 @@ var buclePrincipal = {
     fps: 0,
     iterar: function(registroTemporal) {
         buclePrincipal.idEjecucion = window.requestAnimationFrame(buclePrincipal.iterar);
-
         buclePrincipal.actualizar(registroTemporal);
         buclePrincipal.dibujar();
 
@@ -28,8 +27,11 @@ var buclePrincipal = {
         
     },
     actualizar: function(registroTemporal) {
-        teclado.reiniciar();
         mando.actualizar();
+        controles.actualizar();
+        maquinaEstados.actualizar();
+        teclado.reiniciar();
+        controles.reiniciar();
         buclePrincipal.aps++;
     },
     dibujar: function(registroTemporal) {

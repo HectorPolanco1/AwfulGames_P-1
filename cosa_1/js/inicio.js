@@ -1,27 +1,23 @@
 //DOM = DOCUMENT OBJECT MODEL
 // ctrl + f5 = recargar limpiando la caché
 
-document.addEventListener('DOMContentLoaded', function() {
-    inicio.iniciarJuego();
-}, false);
-
 var inicio = {
+	iniciadores: [
+		maquinaEstados.iniciar(),
+		teclado.iniciar(),
+		mando.iniciar(),
+		buclePrincipal.iterar()
+	],
 	iniciarJuego: function() {
-		console.log("Juego iniciado");
-		ajax.cargarArchivo("mapas/nosenoche.json");
-		teclado.iniciar();
-		dimensiones.iniciar();
-		mando.iniciar();
-		inicio.recargarTiles();
-		buclePrincipal.iterar();
+		inicio.encadenarInicios(inicio.iniciadores.shift());
 	},
-	recargarTiles: function() {
-		document.getElementById("juego").innerHTML = "";
-		for (var y = 0; y < dimensiones.obtenerTilesVerticales(); y++) {
-			for (var x = 0; x < dimensiones.obtenerTilesHorizontales(); x++) {
-				var r = new Rectangulo(x * dimensiones.ladoTiles, y * dimensiones.ladoTiles,
-					dimensiones.ladoTiles, dimensiones.ladoTiles);
-			}
+	encadenarInicios: function(iniciador) {
+		if(iniciador) {
+			iniciador(() => inicio.encadenarInicios(iniciadores.shift()));
 		}
 	}
 };
+
+document.addEventListener('DOMContentLoaded', function() {
+    inicio.iniciarJuego();
+}, false);

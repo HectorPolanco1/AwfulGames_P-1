@@ -7,10 +7,12 @@
     <title>Awful Games 1</title>
 </head>
 <body>
-<div id="juego">			
-		</div>
-		<?php
-			include_once 'app/cargadorArchivosJS.inc.php';
-		?>
+<div id="juego">	
+	<div id="mapa">
+	</div>				
+</div>
+<?php
+	include_once 'app/cargadorArchivosJS.inc.php';
+?>
 </body>
 </html>
