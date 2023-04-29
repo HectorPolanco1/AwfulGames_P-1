@@ -12,17 +12,12 @@ function EstadoMapamundi(idEstado) {
 }
 
 EstadoMapamundi.prototype.actualizar = function(registroTemporal) {
-	if (!this.mapaListo) {
+	if (!this.mapaListo || this.mapa == null || this.jugadorMapamundi == null) {
 		return;
 	}
-    this.jugadorMapamundi.actualizar(registroTemporal);
+	
+    this.jugadorMapamundi.actualizar(registroTemporal, this.mapa);
 	this.mapa.actualizar(registroTemporal, this.jugadorMapamundi.posicionEnMapaEnPixeles);
-
-    if (this.jugadorMapamundi.limiteArriba.cruza(this.mapa.limiteMapa)) {
-		console.log("está dentro");
-	} else {
-		console.log("está fuera");
-	}
 }
 
 EstadoMapamundi.prototype.dibujar = function() {
