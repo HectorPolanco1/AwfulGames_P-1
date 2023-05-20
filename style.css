@@ -146,7 +146,7 @@ section img#edificios
     color: #1E0C1A;
     font-size: 1.5em;
     z-index: 9;
-    transform: translateY(5px);
+    transform: translateY(10px);
 }
 .sec
 {

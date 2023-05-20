@@ -1,5 +1,4 @@
-//DOM = DOCUMENT OBJECT MODEL
-// ctrl + f5 = recargar limpiando la caché
+// ctrl + f5 - recargar limpiando la caché
 
 var inicio = {
 	iniciadores: [
@@ -20,5 +19,5 @@ var inicio = {
 };
 
 document.addEventListener('DOMContentLoaded', function() {
-    inicio.iniciarJuego();
+	inicio.iniciarJuego();
 }, false);

@@ -8,15 +8,32 @@
         <title>Awful Games 1</title>
     </head>
     <body>
-        <div id="juego">	
+        <div id="juego">
+            <div id="pantalla-titulo">
+			</div>
+
             <div id="mapa">
             </div>
+
             <div id="jugador">
             </div>
+
             <div id="colisiones">
             </div>
+
             <div id="localizaciones">
-            </div>	    				
+            </div>
+
+            <div id="popup">
+			</div>
+            <div id="inventario">
+                <div id="cabecera">
+                    INVENTARIO
+                </div>
+                <div id="contenido">
+                    contenido
+			    </div>
+			</div>	    				
         </div>
         <?php
             include_once 'app/cargadorArchivosJS.inc.php';
